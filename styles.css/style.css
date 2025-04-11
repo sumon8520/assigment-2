@@ -16,9 +16,10 @@
     background-color: rgba(17, 17, 17, 1);
   }
   .btn-primary{
+    text-align: center;
     font-size: 1.15rem;
     font-weight: 700;
-    padding: 16px 46px;
+    padding: 16px 30px;
     border-radius: 8px;
     color: white;
     border: none;
@@ -161,11 +162,32 @@
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 50px;
   }
+  /* Run Extra Section */
+  .run-container{
+    display: flex;
+    max-width: 1060px;
+    margin: auto;
+    background-color: rgba(34, 34, 34, 1);
+    gap: 165px;
+    padding: 65px;
+    border-radius: 20px;
+  }
+  .run-tittle{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 100px;
+  }
+  .run-img{
+    width: 100%;
+    border-radius: 80px;
+  }
   /* Mobile device responsive section */
   @media screen and (max-width: 576px) {
     .nav-items,
     .navbar,
-    .banner{
+    .banner,
+    .run-container{
         flex-direction: column;
     }
     .navbar{
@@ -199,7 +221,16 @@
         margin: 10px 0;
         display: inline-block;
     }
-
+    .run-container{
+      padding: 20px;
+      gap: 20px;
+      width: 250px;
+      margin: auto;
+    }
+    .run-img{
+      width: 100%;
+      border-radius: 20px;
+    }
     /* Grid Layout Section */
     .habit-container{
       grid-template-columns: repeat(1, 1fr);
