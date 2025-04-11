@@ -176,11 +176,37 @@
     font-size: 3rem;
     font-weight: 700;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
   .run-img{
     width: 100%;
     border-radius: 80px;
+  }
+  .run-description{
+    color: gray;
+    margin: 8px;
+  }
+
+  /* training section */
+  .training-tittle{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }
+  .trainig-container{
+    max-width: 1060px;
+    margin: 50px auto 0 auto;
+  }
+  .img-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .training-img{
+    width: 100%;
+  }
+  .img-tittle{
+    font-size: 1.50rem;
+    font-weight: 700;
   }
   /* Mobile device responsive section */
   @media screen and (max-width: 576px) {
@@ -232,11 +258,15 @@
       border-radius: 20px;
     }
     /* Grid Layout Section */
-    .habit-container{
+    .habit-container,
+    .img-container{
       grid-template-columns: repeat(1, 1fr);
     }
     .habit-container{
       margin: 20px 20px 0 20px;
       gap: 10px;
+    }
+    .training-img{
+      width: 99%;
     }
   }
