@@ -9,6 +9,9 @@
   .display-flex{
     display: flex;
   }
+  .dark-2{
+    color: rgba(255, 255, 255, 0.5);
+  }
   .header{
     background-color: rgba(17, 17, 17, 1);
   }
@@ -23,6 +26,9 @@
   }
   *{
     margin: 0;
+  }
+  main{
+    background-color: black;
   }
   /* Navbar Style */
   .navbar{
@@ -59,7 +65,7 @@
 
   /* Banner Section Style */
   .banner{
-    margin: 50px 190px;
+    margin: 50px 190px 0 190px;
     gap: 520px;
   }
   .banner-img{
@@ -124,15 +130,47 @@
     bottom: 50px;
     left: -100px;
   }
+  /* Habit Section */
+  .habit-tittle{
+    text-align: center;
+    padding: 50px 0 50px 0;
+  }
+  .habit-tittle-2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+  }
+  .habit-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 65px;
+    margin: 78px 180px 0 180px;
+  }
+  .habit-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  .habit-sub-tittle{
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 60px;
+  }
+  .dark-3{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+  }
   /* Mobile device responsive section */
   @media screen and (max-width: 576px) {
-    .navbar,
     .nav-items,
+    .navbar,
     .banner{
         flex-direction: column;
     }
     .navbar{
         padding: 20px;
+        
     }
     .nav-items{
         border: none;
@@ -160,5 +198,14 @@
     .btn-container{
         margin: 10px 0;
         display: inline-block;
+    }
+
+    /* Grid Layout Section */
+    .habit-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .habit-container{
+      margin: 20px 20px 0 20px;
+      gap: 10px;
     }
   }
